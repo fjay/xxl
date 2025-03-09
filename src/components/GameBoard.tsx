@@ -31,7 +31,7 @@ const GameBoard: React.FC<GameBoardProps> = ({ level }) => {
 
   const generateProblems = () => {
     const pairs: MathProblem[] = [];
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < 6; i++) {
       const [prob1, prob2] = MathGenerator.generateProblemPair();
       pairs.push(prob1, prob2);
     }
